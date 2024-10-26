@@ -1,5 +1,3 @@
-
-
 interface CategoryProms {
   params: {
     categories: string[];
@@ -7,6 +5,7 @@ interface CategoryProms {
   };
 }
 export default function Category(promps: CategoryProms) {
-  console.log(promps);
+  const { categories } = promps.params;
+  console.log(categories);
   return <h1>Categoria</h1>;
 }
